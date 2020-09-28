@@ -1,0 +1,61 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.newyear {
+    /* margin-top: 20px; */
+    width: 1300px;
+    height: 550px;
+    background-image: url(https://www.takadada.com/wp-content/uploads/2019/07/hinh-anh-mat-trang-1.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.day {
+    padding-top: 20px;
+}
+
+.day h2 {
+    color: rgb(126, 126, 241);
+    display: inline-block;
+}
+
+#date {
+    color: yellow;
+}
+
+.count {
+    margin-top: 80px;
+}
+
+#ngay {
+    font-size: 100px;
+    color: yellow;
+}
+
+.count h1 {
+    font-size: 60px;
+    color: yellow;
+}
+
+.time {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.time__ele {
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.time__ele h1 {
+    color: rgb(126, 126, 241);
+}
