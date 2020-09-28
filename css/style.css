@@ -10,7 +10,8 @@
     /* margin-top: 20px; */
     width: 1300px;
     height: 550px;
-    background-image: url(https://www.takadada.com/wp-content/uploads/2019/07/hinh-anh-mat-trang-1.jpg);
+    /* background-image: url(https://www.takadada.com/wp-content/uploads/2019/07/hinh-anh-mat-trang-1.jpg); */
+    background-image: url(https://cdn.phunuvagiadinh.vn/nguyenthivananh/hoa-mai-vang-2.jpg);
     background-size: cover;
     margin: 0 auto;
     text-align: center;
@@ -35,12 +36,12 @@
 
 #ngay {
     font-size: 100px;
-    color: yellow;
+    color: rgb(155, 27, 134);
 }
 
 .count h1 {
     font-size: 60px;
-    color: yellow;
+    color: rgb(155, 27, 134);
 }
 
 .time {
@@ -57,5 +58,5 @@
 }
 
 .time__ele h1 {
-    color: rgb(126, 126, 241);
+    color: rgb(155, 27, 134);
 }
