@@ -14,8 +14,15 @@ function date() {
     let formartmonth = formarttime(months);
     // them 0 vao ngay va thang khi ngay thang nho hon 10
     document.querySelector('#date').innerHTML = `${formartday} \\ ${formartmonth} \\ ${year}`;
-
-
+    let thang = months - 1;
+    let ngay = days + 1;
+    //
+    var startDate = new Date(year, thang, ngay);
+    // Do your operations
+    var endDate = new Date("February 12, 2021");
+    // endDate = 'Feb, 12, 2020';
+    var aaa = (endDate.getTime() - startDate.getTime()) / 86400000;
+    document.querySelector('#ngay').innerHTML = `${aaa}`;
 };
 
 function formarttime(time) {
@@ -46,16 +53,19 @@ function showtime() {
     console.log(minutes);
     let seconds = second - t.getSeconds();
     console.log(seconds);
-    let ngay = 136;
-    document.querySelector('#ngay').innerHTML = `${ngay}`;
+    // let ngay = 135;
 
-    countday(ngay, hours);
+
+
+
 
 
     // let formatHours = convertFormartHours(hours);
     hours = addZeroTime(hours);
     minutes = addZeroTime(minutes);
     seconds = addZeroTime(seconds);
+
+    // countday(ngay, hours, minutes, seconds);
 
     document.querySelector('#hour').innerHTML = `${hours}`;
     document.querySelector('#minute').innerHTML = `${minutes}`;
@@ -77,14 +87,14 @@ function addZeroTime(time) {
     return time;
 }
 
-function countday(ngayf, gio) {
-    while (ngayf !== 0) {
-        if (gio === 0) {
-            --ngayf;
-        }
-        return ngayf;
-    }
-}
+// function countday(ngayf, gio, phut, giay) {
+
+//     if (gio === 0 && phut === 0 && giay === 0) {
+//         ngayf -= ngayf;
+//     }
+//     return ngayf;
+
+// }
 
 
 showtime();
